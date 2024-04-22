@@ -20,6 +20,11 @@ justify-content: space-between;
   -1px  1px 0 black,
    1px  1px 0 black; 
 }
+.navbar-text:hover {
+  color: #000000; 
+  transform: scale(1.15);
+}
+
 /* INICIO ANIMACION DE ICONO DE LA PAGINA */
 .icon-navbar-animation {  
   /*animacion hover*/
@@ -87,13 +92,17 @@ section {
 
 
 
-
 /*Seccion inicio*/
 .inicio {
-    background-color: #f5f6f7;
-    min-height: 450px;
-    text-align: center;
-    scroll-margin-top: -510px
+  background:linear-gradient(to right top, #0000008a, #0000008a), url(../assets/images/fondo-cine.png);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .inicio .contenedor {
   position: relative;
@@ -101,10 +110,42 @@ section {
 
 }
 .inicio-principal {
+  color: #fffaf2;
     padding: 3rem;
 }
 
+/* Formulario de Buscador */
 
+.search-form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.search-input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+  width: 300px;
+  margin-right: 10px;
+}
+
+.search-button {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #0c5783;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  color: #000000;
+  background-color: #0056b3;
+  transform: scale(1.08);
+
+}
 
 /*Peliculas*/
 .peliculas {
