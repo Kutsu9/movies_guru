@@ -10,6 +10,36 @@ justify-content: space-between;
 .navbar-text{
   color: #fffaf2;
 }
+.navbar-titulo{
+    font-weight: 700;
+  font-size: 1.2rem;
+  color: #fffaf2;
+  text-shadow: 
+  -1px -1px 0 black,  
+   1px -1px 0 black,
+  -1px  1px 0 black,
+   1px  1px 0 black; 
+}
+/* INICIO ANIMACION DE ICONO DE LA PAGINA */
+.icon-navbar-animation {  
+  /*animacion hover*/
+    &:hover{
+        animation: pochoclo-saltando 0.60s infinite;
+    }
+}
+@keyframes pochoclo-saltando{
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* FIN ANIMACION DE ICONO DE LA PAGINA */
+
 /*Estilos generales*/
 section {
     display: flex;
