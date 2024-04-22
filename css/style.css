@@ -1,0 +1,98 @@
+/*Barra de navegacion*/
+.navbar {
+padding: 7px;
+background-color: #0c5783
+}
+.navbar-collapse {
+align-items: center;
+justify-content: space-between;
+}
+.navbar-text{
+  color: #fffaf2;
+}
+/*Estilos generales*/
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  h1 {
+    font-size: 2.5rem;
+    font-family: 'Secular One', sans-serif;
+  }
+  .seccion-color-azul {
+    color: #fffaf2;
+    background-color:  #0a7195;
+  }
+  
+  .seccion-color-violeta {
+    color:#fffaf2;
+    background-color: #099eb4 ;
+  }
+  /* seccion footer */
+  .seccion-footer{
+    height: 100px;
+    color:#fffaf2;
+    background-color: #0c5783 ;
+  }
+
+  /* Personalizacion de texto general*/
+  .seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Secular One', sans-serif;
+  }
+
+  .seccion-debajo-titulo {
+    color: white;
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Secular One', sans-serif;
+  }
+  .seccion-texto {
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+  }
+
+
+
+
+/*Seccion inicio*/
+.inicio {
+    background-color: #f5f6f7;
+    min-height: 450px;
+    text-align: center;
+    scroll-margin-top: -510px
+}
+.inicio .contenedor {
+  position: relative;
+  overflow: hidden;
+
+}
+.inicio-principal {
+    padding: 3rem;
+}
+
+
+
+/*Peliculas*/
+.peliculas {
+  height: 500px;
+  padding: 10px;
+}
+.peliculas-texto {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+ }
+
+
+/*Series*/
+.series {
+  height: 500px;
+  padding: 10px;
+}
+.series-texto {
+ font-size: 15px;
+ font-family: "Roboto", sans-serif;
+}

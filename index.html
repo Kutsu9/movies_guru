@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <!--Metadatos-->
+    <meta charset="UTF-8">
+    <!-- TODO Completar con sus nombres en author -->
+    <meta name="author" content="Franco Kutsukos, ..">
+    <meta name="description" content="Peliculas & Series">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Titulo-->
+    <title>Movies Guru</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/favicon.png" href="/assets/images/favicon.png">
+    <!--Boostrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--Boostrap Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!--Hoja estilo CSS-->
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Secular+One&display=swap" rel="stylesheet">
+</head>
+<body>  
+    <!--Barra de navegacion-->
+
+    <!-- Configuracion de la barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid"> 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    <!-- Icono de barra y nombre -->
+          <div class="collapse navbar-collapse" id="navbar-toggler">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/palomitas-de-maiz.png" width="50" alt="Logo de la pagina web" >
+                <span class="navbar-text">Movies Guru</span>
+            </a>
+          </div>
+    <!-- barra de navegacion peliculas y series -->
+          <div>
+              <ul class="navbar-nav d-flex justify-content-center align-item-center">
+            <li class="nav-item">
+              <a class="nav-link navbar-text" aria-current="page" href="#Peliculas">Peliculas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-text" href="#Series">Series</a>
+            </li>
+          </ul>
+        </div>
+    <!--barra de navegacion de Registrarse e inicio -->
+    <div>
+                    <ul class="navbar-nav d-flex justify-content-center align-item-center">
+              <li class="nav-item">
+                <a class="nav-link navbar-text" href="#registrarse">Registrarse</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-text" href="#inicio-sesion">Inicio de Sesión</a>
+              </li>
+              </ul>
+        </div>
+    
+      </nav>
+
+   <!-- Seccion Registrarse -->
+   <!-- TODO quiero agregar una imagen de fondo, la cual es "fondo-cine.png" -->
+<section id="Registrarse" class="hero align-item-stretch inicio">
+  <div class="inicio-principal">
+    <h1>Movies Guru</h1>
+    <h2>Peliculas & Series en un solo lugar.</h2>
+</section>
+
+    <!--Seccion Peliculas-->
+    <section class="peliculas seccion-color-azul">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Peliculas</h2>
+      </div>
+    </section>
+    <!--Seccion Series-->
+    <section class="series seccion-color-violeta">
+      <div class="seccion-titulo"><h2>Series</h2></div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Pie de pagina -->
+  <footer class="seccion-footer">
+     <div class="text-center ">
+     <span>Todos los derechos reservados</span>
+    </div>
+  </footer>
+
+    <!--JavaScript-->
+    <script src="js/function.js"></script>
+    <!--Boostrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
