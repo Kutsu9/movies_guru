@@ -91,6 +91,7 @@ section {
     background-color: #0c5783 ;
   }
 
+
   /* Personalizacion de texto general*/
   .seccion-titulo {
     font-size: 2rem;
@@ -185,4 +186,8 @@ section {
 .series-texto {
  font-size: 15px;
  font-family: "Roboto", sans-serif;
+}
+.arrow-up{
+
+  filter: invert(100%);
 }
