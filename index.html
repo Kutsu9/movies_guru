@@ -4,13 +4,13 @@
      <!--Metadatos-->
     <meta charset="UTF-8">
     <!-- TODO Completar con sus nombres en author -->
-    <meta name="author" content="Franco Kutsukos, ..">
+    <meta name="author" content="Franco Kutsukos, Irina Puskovas, Camilo Carrasco,..">
     <meta name="description" content="Peliculas & Series">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Titulo-->
-    <title>Movies Guro</title>
+    <title>Movies Guru</title>
     <!--Favicon-->
     <link rel="icon" type="image/favicon.png" href="/assets/images/favicon.png">
     <!--Boostrap CSS-->
@@ -24,6 +24,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Secular+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Efecto zoom-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 <body>  
     <!--Barra de navegacion-->
@@ -67,14 +69,14 @@
 
    <!-- Seccion inicio -->
 <section id="footer" class="hero align-item-stretch inicio">
-  <div class="inicio-principal">
+  <div data-aos="zoom-in" data-aos-duration="1000" class="inicio-principal">
     <h1>Movies Guru</h1>
-    <h2>Peliculas & Series en una sola lugar.</h2>
+    <h2>Peliculas & Series en un solo lugar.</h2>
 <!-- TODO Deberiamos agregar una parrafo para contar algo mas? -->
- <p> ENCONTRARAS LOS MEJORES ESTRENOS Y PELICULAS DESTACADAS Siempre</p>
+ <p> ENCONTRARAS LOS MEJORES ESTRENOS Y PELICULAS DESTACADAS </p>
 
 <!-- Formulario de buscador -->
-    <form class="search-form">
+    <form data-aos="zoom-in" data-aos-duration="1000" class="search-form">
       <input type="text" class="search-input" placeholder="Que vas a ver hoy?">
       <button type="submit" class="search-button">Buscar</button>
     </form>
@@ -82,9 +84,24 @@
 </section>
 
     <!--Seccion Peliculas-->
-    <section id="Peliculas"class="peliculas seccion-color-azul">
+    <section data-aos="zoom-in" data-aos-duration="1000" id="Peliculas"class="peliculas seccion-color-azul">
+      <h3 class="seccion-titulo">Peliculas</h3>
       <div class="contenedor">
-        <h3 class="seccion-titulo">Peliculas</h3>
+        <a href="https://www.youtube.com/watch?v=JlMLatfefmk&ab_channel=ONEMediaEspa%C3%B1ol">
+          <div class="pelicula"> 
+            <img class="ImgPelicula" src="./Catalogo-Peliculas/peli_1.jpg" alt="TheBeekeper">
+            <div class=" TituloPelicula">
+              <h4>The Beekeeper</h4>
+            </div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=AgMzqlwa-zg&ab_channel=GabitaUy">
+          <div class="pelicula">
+            <img class="ImgPelicula" src="./Catalogo-Peliculas/peli_2.jpg" alt="Badland Hunters">
+          <div class=" TituloPelicula">
+            <h4>Badland Hunters</h4>
+          </div>
+        </a>
+        </div>
       </div>
     </section>
     <!--Seccion Series-->
@@ -109,5 +126,9 @@
     <script src="js/function.js"></script>
     <!--Boostrap js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+</script>
 </body>
 </html>
