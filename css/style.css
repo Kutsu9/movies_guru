@@ -199,3 +199,29 @@ section {
 
   filter: invert(100%);
 }
+
+/* Registro */
+.bodyRegistrarse {
+  background:linear-gradient(to right top, #0000008a, #0000008a), url(../assets/images/registro_foto.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Inicio Sesion */
+.bodyInicio-Sesion {
+  background:linear-gradient(to right top, #0000008a, #0000008a), url(../assets/images/inicio_sesion_foto.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

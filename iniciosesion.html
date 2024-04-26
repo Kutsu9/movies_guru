@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Título-->
-    <title>Movies Guru</title>
+    <title>Inicio Sesión</title>
     <!--Favicon-->
     <link rel="icon" type="image/favicon.png" href="/assets/images/favicon.png">
     <!--Boostrap CSS-->
@@ -24,28 +24,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!--Efecto zoom-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
 </head>
-<body class="bodyRegistrarse">
-    <header class="headerRegistrarse">
-        <section id="footer" class="hero align-item-stretch inicio">
-            <div data-aos="zoom-in" data-aos-duration="1000" class="inicio-principal">
-              <h1>Movies Guru</h1>
-              <h2>Peliculas & Series en un solo lugar.</h2> 
-    </header>
+<body class="bodyInicio-Sesion">
     <main id="main" class="main">
-        <section class="hero align-item-stretch inicio" >
+        <section  class="hero align-item-stretch" >
             <!--inicio formulario-->
         <form data-aos="zoom-in" data-aos-duration="1000" action="#" method="post">
-            <h2 class="inicio-principal">Registro</h2>
-            <div>
-                <input class="search-input" type="text" placeholder="Nombre"
-                required id="nombre" name="nombre">
-            </div>
-            <div>
-                <input class="search-input" type="text" placeholder="Apellido"
-                required id="apellido" name="apellido">
-            </div>
+            <h2 class="inicio-principal">Iniciar Sesión</h2>
             <div>
                 <input class="search-input" type="email" placeholder="Email"
                 required id="mail" name="mail">
@@ -54,44 +39,18 @@
                 <input class="search-input" type="password" placeholder="Contraseña"
                 required id="password" name="password">
             </div>
+           
             <div>
-                <input class="search-input" type="date" placeholder="Fnac.(dd/mm/aaaa)"
-                required id="fechaNacimiento" name="fechaNacimiento">
+                <input type="submit" value="Ingresar" class="navbar-especial">
             </div>
             <div>
-                <select name="pais" id="pais">
-                    <option value="Pais"></option>
-                    <option value="AR">Argentina</option>
-                    <option value="PY">Paraguay</option>
-                    <option value="CH">Chile</option>
-                    <option value="MX">Mexico</option>
-                    <option value="UR">Uruguay</option>
-                    
-                </select>
-            </div>
-            <div class="terminos">
-                <input type="checkbox" class="check" id="terminos">
-                <label class="inicio-principal" for="terminos">Acepto terminos y condiciones</label>
-            </div>
-            <div>
-                <input type="submit" value="Registrarse" class="navbar-especial">
-            </div>
-            <div>
-                <a class="inicio-principal" href="#">¿Necesitas ayuda?</a>
+                <a class="inicio-principal" href="#">¿Olvidaste tu contraseña?</a>
             </div>
 
         </form>
 
         </section>
     </main>
-    <!-- Pie de pagina -->
-  <footer class="seccion-footer">
-    <div class="text-center ">
-    <span>Todos los derechos reservados</span>
-    <button><a href="#footer">Touchme</a></button>
-    
-   </div>
- </footer>
 <!--JavaScript-->
 <script src="js/function.js"></script>
 <!--Boostrap js-->
