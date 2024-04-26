@@ -170,30 +170,292 @@ section {
 /*Peliculas*/
 
 .peliculas {
-  height: 500px;
+  height: 750px;
   padding: 10px;
 }
 .peliculas-texto {
   font-size: 15px;
   font-family: "Roboto", sans-serif;
 }
-.contenedor{
+/*.pelicula
+{
+  position: relative;
+  display: inline-block;
+}*/
+/*.peliculas {*/
 
-  .ImgPelicula {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  .peliculas {
+    .ImgPelicula {
+      /*display: block;*/ 
+      width: 170px;
+      height: auto;
+      margin-left: -700px;
+      margin-top: -20px;
+      /*object-fit: cover;*/
+      border-radius: 10px;
+                  }
+
+    
+      .TituloPelicula 
+      {
+        color: white;
+        width: 135px;
+        height: 12;
+        margin-left: -665px;
+        margin-top: 5px;
+      }
+  
+.ImgPelicula1
+{
+  width: 170px;
+  height: auto;
+  margin-left: -700px;
+  margin-top: 30px;
+  /*object-fit: cover;*/
   border-radius: 10px;
 }
+
+.TituloPelicula1
+{
+  color: white;
+  width: 135px;
+  height: 12;
+  margin-left: -657px;
+  margin-top: 15px; 
 }
+
+  .ImgPelicula2
+  {
+    width: 170px;
+    height: auto;
+    margin-left: -460px;
+    margin-top: -1145px;
+    /*object-fit: cover;*/
+    border-radius: 10px;
+  }
+
+  .TituloPelicula2
+  {
+    color: white;
+    width: 135px;
+    height: 12;
+    margin-left: -440px;
+    margin-top: -430px;
+  }
+  .ImgPelicula3 
+  {
+    width: 170px;
+    height: auto;
+    margin-left: -460px;
+    margin-top: -450px;
+    /*object-fit: cover;*/
+    border-radius: 10px; 
+  }
+
+  .TituloPelicula3
+  {
+    color: white;
+    width: 135px;
+    height: 12;
+    margin-left: -415px;
+    margin-top: -80px;
+  }
+  
+  .ImgPelicula4
+  {
+    width: 170px;
+    height: auto;
+    margin-left: -230px;
+    margin-top: -450px;
+    /*object-fit: cover;*/
+    border-radius: 10px;  
+  }
+
+  .TituloPelicula4
+  {
+    color: white;
+    width: 135px;
+    height: 12;
+    margin-left: -195px;
+    margin-top: -90px;
+  }
+
+  .ImgPelicula5
+  {
+    width: 170px;
+    height: auto;
+    margin-left: -2px;
+    margin-top: -462px;
+    /*object-fit: cover;*/
+    border-radius: 10px;
+  }
+
+  .TituloPelicula5
+  {
+    color: white;
+    width: 135px;
+    height: 12;
+    margin-left: 50px;
+    margin-top: -95px;
+  }
+.ImgPelicula6
+{
+  width: 170px;
+    height: auto;
+    margin-left: 225px;
+    margin-top: -477px;
+    /*object-fit: cover;*/
+    border-radius: 10px;
+}
+
+.TituloPelicula6
+  {
+    color: white;
+    width: 135px;
+    height: 12;
+    margin-left: 250px;
+    margin-top: -105px;
+  }
+
+  .ImgPelicula7
+  {
+    width: 170px;
+    height: auto;
+    margin-left: -230px;
+    margin-top: -1225px;
+    /*object-fit: cover;*/
+    border-radius: 10px;
+  }
+
+  .TituloPelicula7
+  {
+    color: white;
+    width: 135px;
+    height: 12;
+    margin-left: -175px;
+    margin-top: -468px;
+  }
+
+  .ImgPelicula8
+  {
+    width: 170px;
+    height: auto;
+    margin-left: 1px;
+    margin-top: -1237px;
+    /*object-fit: cover;*/
+    border-radius: 10px;
+  }
+
+  .TituloPelicula8
+  {
+    color: white;
+    width: 135px;
+    height: 12;
+    margin-left: 20px;
+    margin-top: -490px;
+  }
+
+  .ImgPelicula9
+  {
+    width: 170px;
+    height: auto;
+    margin-left: 225px;
+    margin-top: -1250px;
+    /*object-fit: cover;*/
+    border-radius: 10px;
+  }
+
+  .TituloPelicula9
+  {
+    color: white;
+    width: 135px;
+    height: 12;
+    margin-left: 250px;
+    margin-top: -490px;
+  }
+
+  .ImgPelicula10
+  {
+    width: 170px;
+    height: auto;
+    margin-left: 450px;
+    margin-top: -1265px;
+    /*object-fit: cover;*/
+    border-radius: 10px;
+  }
+
+  .TituloPelicula10
+  {
+    color: white;
+    width: 135px;
+    height: 12;
+    margin-left: 480px;
+    margin-top: -510px;
+  }
+  .ImgPelicula11
+  {
+    width: 170px;
+    height: auto;
+    margin-left: 450px;
+    margin-top: -560px;
+    /*object-fit: cover;*/
+    border-radius: 10px;
+  }
+  .TituloPelicula11
+  {
+    color: white;
+    width: 135px;
+    height: 12;
+    margin-left: 518px;
+    margin-top: -145px;
+  }
+  .ImgPelicula12
+  {
+    width: 170px;
+    height: auto;
+    margin-left: 680px;
+    margin-top: -1300px;
+    /*object-fit: cover;*/
+    border-radius: 10px;
+  }
+
+  .TituloPelicula12
+  {
+    color: white;
+    width: 135px;
+    height: 12;
+    margin-left: 730px;
+    margin-top: -510px;
+  }
+  .ImgPelicula13
+  {
+    width: 170px;
+    height: auto;
+    margin-left: 680px;
+    margin-top: -592px;
+    /*object-fit: cover;*/
+    border-radius: 10px;
+  }
+  .TituloPelicula13
+  {
+    color: white;
+    width: 135px;
+    height: 12;
+    margin-left: 730px;
+    margin-top: -180px;
+  }
+
+}
+
 /*Series*/
 .series {
   height: 500px;
   padding: 10px;
+  
 }
 .series-texto {
  font-size: 15px;
- font-family: "Roboto", sans-serif;
+ font-family: "Roboto", sans-serif; 
 }
 .arrow-up{
 
