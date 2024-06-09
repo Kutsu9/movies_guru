@@ -1,93 +1,58 @@
+console.log("test1");
+const form = document.getElementById("myForm");
+const email = document.getElementById("email");
+const password = document.getElementById("password");
 
-console.log ("test");
-document.addEventListener('DOMContentLoaded', () =>{
-   const form = document.getElementById('myForm');
+form.addEventListener('submit', (event)=>{
+    event.preventDefault();
 
-   form.addEventListener('submit', (event)=>{
-    if(!validateForm()){
-        console.log("El formulario no es valido ");
-        event.preventDefault();
+    checkInput();
+});
 
+function checkInput(){
+    const emailValue = email.value.trim();
+    const passwordValue = password.value.trim();
+
+    if(emailValue ===''){
+        setErrorFor(email,'Este campo no puede estar vacio');
+        console.log("test2");
+    }else if(!isEmail(emailValue)){
+        setErrorFor(email, 'Email inválido');
     }else{
-        console.log("Enviando datos");
+        setSuccesFor(email);
     }
 
-   });
-
-   //funcion de validacion de formulario
-   const validateForm= () =>{
-    let isValid = true;
-
-            isValid = validateEmail('email', 'El correo no es válido') && isValid; 
-            isValid = validatePassword('password', 'La contraseña es obligatoria') && isValid;
-            if (isValid) {
-                setSuccessFor(document.getElementById('email'));
-                setSuccessFor(document.getElementById('password'));
-            }    
-
-    return isValid;
-   };
-
-
-   const validateEmail = (emailId, errorMensaje) =>{
-    const field= document.getElementById(emailId);
-    const email = field.value.trim();
-
-    if(email ===''){
-        setErrorFor(field, 'El correo electronico es obligatorio');
-        return false;
-    }else if(!isEmail(email)){
-        setErrorFor(field, errorMensaje);
-        return false;
+    if(passwordValue===''){
+        console.log("test4");
+        setErrorFor(password,'Este campo no puede estar vacio');
+    }else if(!isPassword(passwordValue)){
+        console.log("test3");
+        setErrorFor(password,'contraseña inválida')
     }else{
-        setErrorFor(field);
-        return true;
+        setSuccesFor(password);
+        irAlInicio();
     }
-
-   };
-
-   const isEmail = (email) =>{
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
-   };
-
-   const validatePassword = (passwordId, errorMensaje) =>{
-    const fieldP = document.getElementById(passwordId);
-    const password = fieldP.value.trim();
-
-    if(password === ''){
-        setErrorFor(fieldP, errorMensaje);
-        return false;
-    }else if(!isPassword(password)){
-        setErrorFor(fieldP, errorMensaje);
-        return false;
-    }else{
-        setErrorFor(fieldP);
-        return true;
-    }
-   };
-
-    // Función para mostrar un mensaje de error
-    const setErrorFor = (input, message) => {
-        const formControl = input.parentElement;
-        const small = formControl.querySelector('small');
-        formControl.className = 'form-control error';
-        if (message) {
-            small.innerText = message;
-        }
-    };
-
-    // Función para mostrar un mensaje de éxito
-    const setSuccessFor = (input) => {
-        const formControl = input.parentElement;
-        formControl.className = 'form-control success';
-    };
-
-   const isPassword= (password)=>{
-    const regex = /^[A-Za-z\d@$!%*?&]{8,}$/;
-    return regex.test(password);
-
-   };
 
     
-})
+}
+function setErrorFor(input){
+    const searchForm = input.parentElement;
+    searchForm.className = "search-form.error"
+
+}
+
+function setSuccesFor(input){
+    const searchForm = input.parentElement;
+    searchForm.className ="search-form.success"
+}
+
+function isEmail(){
+    return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
+
+}
+function isPassword(password){
+    return  /^(?=.*\S)[\s\S]*$/.test(password);
+}
+function irAlInicio(){
+    window.location.href="./index.html";
+}

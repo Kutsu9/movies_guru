@@ -167,6 +167,12 @@ section {
   transform: scale(1.08);
 
 }
+.search-form.error{
+border-color: red;
+}
+.search-form.success{
+  border-color: green;
+}
 
 /*Peliculas*/
 
@@ -488,3 +494,9 @@ section {
   align-items: center;
   text-align: center;
 }
+/* .form-control.success input{
+  border-color: green;
+}
+.form-control.error input{
+  border-color: red;
+} */
