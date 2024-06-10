@@ -30,15 +30,11 @@
     <main id="main" class="main">
         <section class="hero align-item-stretch " >
                 <!--inicio formulario-->
-            <form data-aos="zoom-in" data-aos-duration="1000" action="#" method="post">
+            <form id="myRegistro" data-aos="zoom-in" data-aos-duration="1000" action="#" method="post">
                 <h2 class="inicio-principal">Registro</h2>
                 <div>
-                    <input class="search-input" type="text" placeholder="Nombre"
-                    required id="nombre" name="nombre">
-                </div>
-                <div>
-                    <input class="search-input" type="text" placeholder="Apellido"
-                    required id="apellido" name="apellido">
+                    <input class="search-input" type="text" placeholder="Usuario"
+                    required id="usuario" name="usuario">
                 </div>
                 <div>
                     <input class="search-input" type="email" placeholder="Email"
@@ -49,19 +45,10 @@
                     required id="password" name="password">
                 </div>
                 <div>
-                    <input class="search-input" type="date" placeholder="Fnac.(dd/mm/aaaa)"
-                    required id="fechaNacimiento" name="fechaNacimiento">
+                    <input class="search-input" type="password" placeholder="ContraseñaCheck"
+                    required id="passwordCheck" name="passwordCheck">
                 </div>
-                <div>
-                    <select name="pais" id="pais">
-                        <option value="Pais"></option>
-                        <option value="AR">Argentina</option>
-                        <option value="PY">Paraguay</option>
-                        <option value="CH">Chile</option>
-                        <option value="MX">Mexico</option>
-                        <option value="UR">Uruguay</option>
-                        
-                    </select>
+              
                 </div>
                 <div class="terminos">
                     <input type="checkbox" class="check" id="terminos">
@@ -70,8 +57,12 @@
                 <div>
                     <input type="submit" value="Registrarse" class="navbar-especial">
                 </div>
+                <br><br><br>
                 <div>
                     <a class="inicio-principal" href="#">¿Necesitas ayuda?</a>
+                </div>
+                <div>
+                    <a class="inicio-principal" href="./index.html">Ir a la página principal</a>
                 </div>
 
             </form>
@@ -80,7 +71,8 @@
     </main>
   
     <!--JavaScript-->
-    <script src="js/function.js"></script>
+
+    <script src="./js/validacionRegistro.js"></script>
     <!--Boostrap js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
