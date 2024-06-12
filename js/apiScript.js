@@ -1,5 +1,6 @@
 console.log("test");
 
+
 const movieNameRef = document.getElementById("movie-name");
 const searchBtn = document.getElementById("searchBtn");
 const result = document.getElementById("results");
@@ -8,23 +9,14 @@ const apiKey='de48f529';
 searchBtn.addEventListener('click', () => {
     const movieName = movieNameRef.value;
     const lang='es';
-    const url = `http://www.omdbapi.com/?t=${encodeURIComponent(movieName)}&apikey=${apiKey}&lang=${lang}=language=es`;
+    const url = `http://www.omdbapi.com/?t=${encodeURIComponent(movieName)}&apikey=${apiKey}&lang=${lang}es-MX`;
     console.log("test2");
     if(movieName.length <=0){
         result.innerHTML= `<h3 class="inicio-principal">Ingresar un nombre</h3>`;
     }else {
         fetch(url).then(response => response.json())
         .then((data)=>{
-            console.log(data);
-            console.log(data.Poster);
-            console.log(data.Title);
-            console.log(data.imdbRating);
-            console.log(data.Rated);
-            console.log(data.Runtine);
-            console.log(data.Genre);
-            console.log(data.Plot);
-            console.log(data.Actors);
-
+        
             const posterImg = document.createElement('img');
             posterImg.src = data.Poster;
 
@@ -46,17 +38,17 @@ searchBtn.addEventListener('click', () => {
                             <span> ${data.Runtime}</span>
                         </div>
                         <div class="genre">
-                            <div>${data.Genre.split(",").join("<div></div>")}
+                            <div>${data.Genre.split(",").join("</div><div>")}
                             </div>
 
                         </div>
 
                     </div>
                 </div>
-                <h3 class="details">Plot:</h3>
-                <p class="details">${data.Plot}</p>
-                <h3 class="details">Cast:</h3>
-                <p class="details">${data.Actors}</p>
+                <h3 class="detalleF">Resumen:</h3>
+                <p class="detalleF">${data.Plot}</p>
+                <h3 class="detalleF">Reparto:</h3>
+                <p class="detalleF">${data.Actors}</p>
 
             
             `;

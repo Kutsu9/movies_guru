@@ -546,12 +546,14 @@ border-color: red;
   grid-template-columns: 4fr 8fr;
   align-items: center;
   margin-top: 1.2em;
-  color: white;
+  color: #a0a0a0;
 }
 .poster{
   width: 100%;
+  border-radius: 10%;
+  box-shadow: 0 4px 8px rgba(252, 248, 248, 0.74)
 }
-.rating img{
+.poster img{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -568,8 +570,34 @@ border-color: red;
 }
 .details{
   display: flex;
-  font-size: o.95em;
+  font-size: 0.95em;
   gap: 1em;
   justify-content: center;
-  color: #fffaf2;
+  color: #a0a0a0;
+  margin: 0.6em 0;
+  font-weight: 300;
+}
+.genre {
+  display: flex;
+  justify-content: space-around;
+  color: #ccc;
+}
+.genre div{
+  border: 1px solid #a0a0a0;
+  font-size: 0.75em;
+  padding: 0.4em 1.6em;
+  border-radius: 0.4em;
+  font-weight: 300;
+
+
+}
+
+.detalleF{
+  display: flex;
+  font-size: 0.95em;
+  gap: 1em;
+  justify-content: left;
+  color: #a0a0a0;
+  margin: 0.6em 0;
+  font-weight: 300;
 }
