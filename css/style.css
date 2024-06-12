@@ -167,6 +167,7 @@ section {
   transform: scale(1.08);
 
 }
+
 .search-form.error{
 border-color: red;
 }
@@ -494,9 +495,81 @@ border-color: red;
   align-items: center;
   text-align: center;
 }
-/* .form-control.success input{
-  border-color: green;
+/* pagina detalles */
+.search-container{
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap : 1.2em;
 }
-.form-control.error input{
-  border-color: red;
-} */
+.search-container input,
+.search-container button{
+  font-size: o.9em;
+  outline: none;
+  border-radius: o.3em;
+}
+.search-container input{
+  background-color: transparent;
+  border: 1px solid #a0a0a0;
+  padding: 0.7em;
+  color: #ffffff;
+}
+.search-container input:focus{
+  border-color: #ffffff;
+}
+.search-container button{
+  background-color: teal;
+  border: none;
+  cursor: pointer;
+}
+.result{
+  color:#fffaf2;
+}
+.container{
+  font-size: 16px;
+  width: 90vw;
+  max-width: 37.5em;
+  padding: 3em 1.8em;
+  background-color: #201f28;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 0.6em;
+  box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0.2);
+}
+#result{
+  color: #ffffff;
+}
+.info{
+  position: relative;
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  align-items: center;
+  margin-top: 1.2em;
+  color: white;
+}
+.poster{
+  width: 100%;
+}
+.rating img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  margin: 0.6em 0 0.9em 0;
+}
+.rating img{
+  width: 2em;
+}
+.rating h4{
+  display: inline-block;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+.details{
+  display: flex;
+  font-size: o.95em;
+  gap: 1em;
+  justify-content: center;
+  color: #fffaf2;
+}
